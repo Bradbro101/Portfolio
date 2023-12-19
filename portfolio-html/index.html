@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Bradley Broughton</title>
 </head>
 <body>
     <nav id="navbar">
-        <ul class="navbar">
+        <ul>
             <li class="nav_button"><a href="index.html">Home</a></li>
             <li class="nav_button"><a href="">About Me</a> </li>
             <li class="nav_button"><a href="">Projects</a> </li>
             <li class="nav_button"><a href="">Contact</a></li>
         </ul>
     </nav>
-    <div id="landing">
+    <section id="landing">
         <div id="carousel">
+            <label for="auto_scroll">Autoscroll</label><input type="checkbox" id="auto_scroll">
+            <button onclick="scroll_left()"> > </button>
             <img id="img_1" src="" alt="">
             <img id="img_2" src="" alt="">
             <img id="img_3" src="" alt="">
+            <button onclick="scroll_right()"> < </button>
         </div>
-    </div>
-    <div id="about_me">
+    </section>
+    <section id="about_me">
         <div class="tri_section" id="section_1"></div>
         <div class="tri_section" id="section_2"></div>
         <div class="tri_section" id="section_3"></div>
-    </div>
-    <div id="footer"></div>
+    </section>
+    <section id="footer"></section>
     <div id="cookie_banner"></div>
 </body>
 <script src="../js/functionality.js"></script>
