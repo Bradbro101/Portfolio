@@ -1,34 +1,19 @@
-const carousel = function () {
-    let auto_scroll;
-    const set_auto_scroll = function () {
-        if (!auto_scroll) {
-            auto_scroll = setInterval(auto_scroll_function, 5000);
-        } else {
-            clearInterval(auto_scroll);
-            auto_scroll = null;
-        }
-    }
-    const auto_scroll_function = function () {
-
-        let enabled = document.getElementById("auto_scroll").checked;
-
-        if (enabled) {
-            scroll_left()
-        }
-
-    }
-    const scroll_left = function () {
-
-    }
-    const scroll_right = function () {
-
-    }
-
-    document.getElementById("auto_scroll").addEventListener("click", set_auto_scroll);
-
-    return {
-        set_auto_scroll : set_auto_scroll,
-        scroll_left : scroll_left,
-        scroll_right : scroll_right
-    }
+let slide_number = 1;
+let next_slide = function (n) {
+    display_slides(slide_number += n)
 }
+let display_slides = function (n) {
+    let i;
+    let slides = document.getElementsByClassName("c_image");
+    if (n > slides.length) {
+        slide_number = 1;
+    }
+    if (n < 1) {
+        slide_number = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slide_number - 1].style.display = "block";
+}
+display_slides(slide_number)
