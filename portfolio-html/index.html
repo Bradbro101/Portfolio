@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
+    <link href="../css/portfolio_styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Bradley Broughton</title>
 </head>
-<body>
-    <nav id="navbar">
-        <ul>
-            <li class="nav_button"><a href="index.html">Home</a></li>
-            <li class="nav_button"><a href="">About Me</a> </li>
-            <li class="nav_button"><a href="">Projects</a> </li>
-            <li class="nav_button"><a href="">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="landing">
-        <div id="carousel">
-            <label for="auto_scroll">Autoscroll</label><input type="checkbox" id="auto_scroll">
-            <button onclick="scroll_left()"> > </button>
-            <img id="img_1" src="" alt="">
-            <img id="img_2" src="" alt="">
-            <img id="img_3" src="" alt="">
-            <button onclick="scroll_right()"> < </button>
-        </div>
-    </section>
-    <section id="about_me">
-        <div class="tri_section" id="section_1"></div>
-        <div class="tri_section" id="section_2"></div>
-        <div class="tri_section" id="section_3"></div>
-    </section>
-    <section id="footer"></section>
-    <div id="cookie_banner"></div>
+<body class="lato-regular">
+    <h1 class="headings" id="landing_head">Bradley Broughton</h1>
+    <button class="site_btn" id="menu_button">^</button>
+    <div id="carousel">
+        <button class="dir_btn site_btn" id="left_btn" onclick="next_slide(-1)"> ^ </button>
+        <img class="c_image" id="img_1" alt="First image" src="../css/img/Pasted%20image%2020240212112455.png">
+        <img class="c_image" id="img_2" alt="Second image" src="../css/img/Pasted%20image%2020240212112508.png">
+        <img class="c_image" id="img_3" alt="Third image" src="../css/img/Pasted%20image%2020240212112520.png">
+        <button class="dir_btn site_btn" id="rgt_btn" onclick="next_slide(1)"> ^ </button>
+    </div>
 </body>
 <script src="../js/functionality.js"></script>
 </html>
