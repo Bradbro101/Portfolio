@@ -3,3 +3,89 @@
     padding: 0;
     overflow-x: hidden;
 }
+html, body { /* Adding general styles for whole of website  */
+    background-color: #41B3A3;
+    color: #eeeeee;
+}
+.lato-regular {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.headings {
+
+}
+.headings, #landing_head {
+    margin-top: 20px;
+    font-size: 26px;
+    text-align: center;
+    color: #e2e2e2;
+    transition: 1s;
+}
+.headings, #landing_head:hover {
+    font-size: 32px;
+}
+#landing_head {
+
+}
+.site_btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border:solid black 2px;
+    overflow: hidden;
+
+}
+.dir_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background-color: rgba(226, 125, 96, 0);
+    transition: 0.2s ease;
+    z-index: 1;
+}
+.dir_btn:hover {
+    background-color: rgba(226, 125, 96, 1);
+    transition: 0.2s;
+}
+#left_btn {
+    left: 5%;
+    rotate: -90deg;
+}
+#rgt_btn {
+    right: 5%;
+    rotate: 90deg;
+}
+#menu_button {
+    top: 20px;
+    left: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+    position: absolute;
+    background-color: rgba(226, 125, 96, 0);
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    rotate: -90deg;
+    transition: 1s;
+}
+#menu_button:hover {
+    background-color: #e27d60;
+    rotate: 450deg;
+    transition: 1s;
+}
+#carousel {
+    position: relative;
+    margin: 50px 0 0 1%;
+    height: 400px;
+    width: 98%;
+    background-color: slategrey;
+    overflow: hidden;
+}
+.c_image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
